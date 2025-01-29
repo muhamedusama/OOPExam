@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace OOPExam
 {
-    internal class MCQ:Question
+    internal class MCQ : Question
     {
-
+        public MCQ(string QuestionBody, int mark, Answer[] answers, int CorrectAnswer) : base("MCQ", QuestionBody, mark, answers,CorrectAnswer)
+        {
+            
+        }
     }
 }

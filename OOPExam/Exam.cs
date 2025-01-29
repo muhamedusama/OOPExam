@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace OOPExam
 {
-    internal interface IExam
+    abstract internal class Exam
     {
         public int Time { get; set; }
         public int QuestionsNo { get; set; }
 
-        public void ShowExam();
+        protected Exam(int Time,int QuestionNo)
+        {
+            this.Time = Time;
+            this.QuestionsNo = QuestionNo;
+        }
+        public abstract void ShowExam();
     }
 }

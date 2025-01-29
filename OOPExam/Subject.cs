@@ -10,11 +10,18 @@ namespace OOPExam
     {
         public int ID { get; set; }
         public String? SubjectName { get; set; }
-        public IExam SubjectExam { get; set; }
+        public Exam? SubjectExam { get; set; }
 
-        public void CreateExam(IExam x)
+        public Subject(int ID, String?SubjectName)
         {
-            SubjectExam = x;
+            this.ID = ID;
+            this.SubjectName = SubjectName;
+        }
+
+        public void CreateExam(Exam x)
+        {
+            Console.WriteLine("osama");
+          
         }
     }
 }
