@@ -13,18 +13,8 @@
             Console.WriteLine("Enter number of Questions");
             int QuestionNo=int.Parse(Console.ReadLine());
 
-            if (examtype == 1)
-            {
-                exam = new PracticalExam(examtime,QuestionNo);
-            }
-            //else
-            //{
-            //     exam = new FinalExam(examtime,QuestionNo);
-            //}
-
-
-
-
+            Subject subject = new Subject(1,"Biology");
+            subject.CreateExam(examtype, examtime, QuestionNo);
 
         }
     }

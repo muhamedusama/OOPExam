@@ -18,10 +18,17 @@ namespace OOPExam
             this.SubjectName = SubjectName;
         }
 
-        public void CreateExam(Exam x)
+        public Exam CreateExam(int x,int examtime,int QuestionNo)
         {
-            Console.WriteLine("osama");
-          
+            if (x == 1)
+            {
+                return new PracticalExam(examtime, QuestionNo);
+            }
+            else
+            {
+                return new FinalExam(examtime, QuestionNo);
+            }
+
         }
     }
 }

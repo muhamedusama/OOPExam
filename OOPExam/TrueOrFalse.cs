@@ -8,7 +8,14 @@ namespace OOPExam
 {
     internal class TrueOrFalse : Question
     {
-        public TrueOrFalse(string QuestionHeader, string QuestionBody, int mark, Answer[] answers,int CorrectAnswer) : base(QuestionHeader, QuestionBody, mark, answers,CorrectAnswer)
-        { }
+        private int questionMark;
+        private int rightchoice;
+
+        
+
+        public TrueOrFalse(string QuestionBody, int mark, Answer[] answers,int CorrectAnswer) : base("True Or False", QuestionBody, mark, answers,CorrectAnswer)
+        {
+
+        }
     }
 }
