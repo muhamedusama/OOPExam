@@ -8,8 +8,7 @@ namespace OOPExam
 {
     internal class TrueOrFalse : Question
     {
-        private int questionMark;
-        private int rightchoice;
+        
 
         
 
